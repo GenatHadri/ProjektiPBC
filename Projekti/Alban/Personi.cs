@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Projekti
 {
-    public class Personi
+    public abstract class Personi
     {
-        protected string Emri;
-        protected string Mbiemri;
-        public string _Emri { get { return Emri; } set { Emri = value; } }
-        public string _Mbiemri { get { return Mbiemri; } set { Mbiemri = value; } }
+        private string Emri { get; set; }
+        private string Mbiemri { get; set; }
+
+        protected Personi(string emri, string mbiemri)
+        {
+            Emri = emri;
+            Mbiemri = mbiemri;
+        }
+
     }
 }
