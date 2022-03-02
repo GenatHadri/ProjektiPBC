@@ -43,9 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alban\Asistenti.cs" />
+    <Compile Include="Alban\Personi.cs" />
+    <Compile Include="Alban\Profesori.cs" />
+    <Compile Include="Alban\StafiAkademik.cs" />
     <Compile Include="Departamenti.cs" />
+    <Compile Include="EditFiles.cs" />
     <Compile Include="Genat\Lenda.cs" />
+    <Compile Include="Komisioni.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProjektiException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Genat\Studenti.cs" />
   </ItemGroup>
