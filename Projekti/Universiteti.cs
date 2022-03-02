@@ -13,19 +13,22 @@ namespace Projekti
         public string Email { get; set; }
         Departamenti departamenti { get; set; }
 
+        public Universiteti(string emriUniversitetit, string email, Departamenti departamenti)
+        {
+            EmriUniversitetit = emriUniversitetit;
+            Email = email;
+            this.departamenti = departamenti;
+        }
+
         public Universiteti(Departamenti departamenti)
         {
             this.departamenti = departamenti;
         }
-
-        public Universiteti(string emriUniversitetit, string email, Departamenti departamenti)
+        public string ToString()
         {
-         
-            EmriUniversitetit = emriUniversitetit;
-            Email = email;
-            this.departamenti = departamenti;
-
-
+            return $"{this.GetType().Name}:{this.EmriUniversitetit}  \nEmail:{this.Email} ";
         }
+
+
     }
 }
