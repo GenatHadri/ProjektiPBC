@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekti;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,12 @@ namespace TemaDiplomes.NewFolder
         public string _Grada { get { return Grada; } set { Grada = value; } }
 
 
-        public Profesori(string Grada,string Emri, string Mbiemri, int ID, string Email, string NrTel, int Angazhimi) : base(Emri, Mbiemri, ID, Email, NrTel)
+        public Profesori(string Grada, string Emri, string Mbiemri, int ID, string Email, string NrTel, int Angazhimi) : base(Emri, Mbiemri, ID, Email, NrTel)
         {
+            if (Grada == null || Grada.Trim() == "")
+            {
+                throw new ProjektiException("Grada e profesorit eshte null!");
+            }
             this.Grada = Grada;
 
         }
