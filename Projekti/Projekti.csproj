@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Departamenti.cs" />
+    <Compile Include="Lenda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Studenti.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
