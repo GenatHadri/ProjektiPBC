@@ -18,7 +18,6 @@ namespace Projekti
             this.Kodi = kodi;
             this.Emri = emri;
             this.ECTS = eCTS;
-            
         }
 
         public override string ToString()
