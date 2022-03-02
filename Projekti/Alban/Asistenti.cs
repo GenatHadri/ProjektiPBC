@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TemaDiplomes.NewFolder
+namespace Projekti
 {
     public class Asistenti:StafiAkademik
     {
