@@ -22,3 +22,8 @@ C:\Users\HP\Desktop\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.SuggestedBind
 C:\Users\HP\Desktop\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\ProjektiPBC\Projekti\obj\Debug\Projekti.exe
 C:\Users\HP\Desktop\ProjektiPBC\Projekti\obj\Debug\Projekti.pdb
+C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\obj\Debug\Projekti.exe
+C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\obj\Debug\Projekti.pdb
