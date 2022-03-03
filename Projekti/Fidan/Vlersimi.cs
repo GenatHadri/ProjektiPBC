@@ -14,7 +14,7 @@ namespace Projekti.Fidan
         public Studenti Studenti;
         public Vlersimi(Studenti studenti, Tema t , int Nota)
         {
-          
+
             if (studenti == null)
             {
                 throw new ProjektiException("studenti eshte null");

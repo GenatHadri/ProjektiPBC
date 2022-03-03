@@ -57,7 +57,6 @@
     <Compile Include="Rilind\EditFiles.cs" />
     <Compile Include="Rilind\Komisioni.cs" />
     <Compile Include="Rilind\Lenda.cs" />
-    <Compile Include="Rilind\LendaBase.cs" />
     <Compile Include="Rilind\ProjektiException.cs" />
     <Compile Include="Rilind\Takimet.cs" />
     <Compile Include="Stafi.cs" />

@@ -25,6 +25,7 @@ namespace Projekti
             TemaEcts = 12;
         }
 
+        //Lenda eshte perdor per ti caktuar ects per validimin nese ka mundesi me paraqite temen
 
     }
 }
