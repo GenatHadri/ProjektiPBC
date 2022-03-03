@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Projekti.Rilind
+namespace Projekti
 {
     internal class Lenda
     {
-        private string Emri { get; set; }
-        private int Ects { get; set; }
+        public string Emri { get; set; }
+        public int Ects { get; set; }
         private bool Obligative { get; set; }
 
         public Lenda(string emri, int ects, string obligative)

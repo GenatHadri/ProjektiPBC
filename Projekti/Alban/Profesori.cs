@@ -19,15 +19,15 @@ namespace Projekti
             }
             this.Grada = grada;
         }
-<<<<<<< HEAD
-        public string ToString()
-=======
+
+
+
 
         public string _Grada { get { return Grada; } set { Grada = value; } }
 
 
         public override string ToString()
->>>>>>> b0511363c83aa4717543c4a13b4b3a74268a0614
+
         {
             return $"{base.ToString()} ka graden {this.Grada}";
         }

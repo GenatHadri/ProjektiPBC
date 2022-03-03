@@ -32,7 +32,7 @@ namespace Projekti
             int totalEcts = 0;
             for (int i = 0; i < lendet.Length; i++)
             {
-                totalEcts += lendet[i].ECTS;
+                totalEcts += lendet[i].Ects;
                     
             }
             if(totalEcts > 50)

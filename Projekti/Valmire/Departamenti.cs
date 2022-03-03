@@ -27,7 +27,7 @@ namespace Projekti
             {
                 throw new ProjektiException("Email eshte null!");
             }
-            this.Id = id;
+            
             
         }
        
