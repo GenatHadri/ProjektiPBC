@@ -33,14 +33,15 @@ namespace Projekti
 
         public override string ToString()
         {
-            return this.Emri + " " + this.Mbiemri + " -- " + this.Email;
+            return $"{this.Emri} {this.Mbiemri} me email {this.Email}";
         }
 
-        public bool krahasimi(Object obj)
+
+        public override bool Equals(Object obj)
         {
-            if(obj != null)
+            if (obj != null)
             {
-                if(obj is Personi)
+                if (obj is Personi)
                 {
                     Personi p = (Personi)obj;
                     return p.Emri == this.Emri && p.Mbiemri == this.Mbiemri;
@@ -48,6 +49,9 @@ namespace Projekti
             }
             return false;
         }
+
+
+
 
     }
 }

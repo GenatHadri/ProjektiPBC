@@ -11,21 +11,21 @@ namespace Projekti
     {
         private string Grada;
 
+        public Profesori(int id, string emri, string mbiemri, string email, string nrTel, int angazhimi, string grada) : base(id, emri, mbiemri, email, nrTel, angazhimi)
+        {
+            if (grada == null || grada.Trim() == "")
+            {
+                throw new ProjektiException("Grada e profesorit eshte e zbrazet!");
+            }
+            this.Grada = grada;
+        }
+
         public string _Grada { get { return Grada; } set { Grada = value; } }
 
 
-        public Profesori(string Grada, string Emri, string Mbiemri, int ID, string Email, string NrTel, int Angazhimi) : base(Emri, Mbiemri, ID, Email, NrTel)
+        public override string ToString()
         {
-            if (Grada == null || Grada.Trim() == "")
-            {
-                throw new ProjektiException("Grada e profesorit eshte null!");
-            }
-            this.Grada = Grada;
-
-        }
-        public  string ToString()
-        {
-            return $"{ this.Grada}.{ this.Emri} { this.Mbiemri} Email:{this.Email}";
+            return $"{base.ToString()} ka graden {this.Grada}";
         }
     }
 }

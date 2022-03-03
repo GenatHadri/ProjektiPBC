@@ -27,7 +27,10 @@ namespace Projekti
             this.Angazhimi = angazhimi;
         }
 
-         
+        public override string ToString()
+        {
+            return $"Id: {this.Id} - {base.ToString()} ka angazhimin {this.Angazhimi}";
+        }
 
     }
 }
