@@ -9,9 +9,11 @@ namespace Projekti
     internal class Departamenti
     {
         public int Id { get; set; }
+        public string Emri { get; set; }
         public int IdProfesorit { get; set; }
         public string EmriDepartamentit  { get; set; }
         public string Email { get; set; }
+
 
         public Departamenti(string emri, string email)
         {
