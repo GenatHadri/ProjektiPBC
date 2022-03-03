@@ -28,7 +28,7 @@ namespace Projekti.Fidan
             {
                 throw new ProjektiException("nota eshte shenuar gabim");
             }
-            this.Studenti = studenti;
+            Studenti = studenti;
             this.t = t;
             this.Nota = Nota;
         }
