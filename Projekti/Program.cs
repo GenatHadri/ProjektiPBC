@@ -10,7 +10,7 @@ namespace Projekti
     {
         static void Main(string[] args)
         {
-
+            
         }
     }
 }
