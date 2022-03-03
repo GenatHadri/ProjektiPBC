@@ -48,18 +48,20 @@
     <Compile Include="Alban\Profesori.cs" />
     <Compile Include="Alban\StafiAkademik.cs" />
     <Compile Include="Departamenti.cs" />
-    <Compile Include="EditFiles.cs" />
+    <Compile Include="Rilind\EditFiles.cs" />
     <Compile Include="Genat\Lenda.cs" />
-    <Compile Include="Komisioni.cs" />
+    <Compile Include="Rilind\Komisioni.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProjektiException.cs" />
+    <Compile Include="Rilind\ProjektiException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Genat\Studenti.cs" />
     <Compile Include="Stafi.cs" />
+    <Compile Include="Rilind\Takimet.cs" />
     <Compile Include="Universiteti.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

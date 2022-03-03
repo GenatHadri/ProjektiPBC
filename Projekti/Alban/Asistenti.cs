@@ -8,14 +8,12 @@ namespace Projekti
 {
     public class Asistenti:StafiAkademik
     {
-        private int Pervoja;
+        private int Pervoja { get; set; }
 
-        public int _Pervoja { get { return Pervoja; } set{ Pervoja = value; } }
-
-        public Asistenti(int Pervoja, string Emri, string Mbiemri, string Email, int ID, int Angazhimi, string NrTel) : base(Emri, Mbiemri, ID, Email, NrTel)
+        public Asistenti(int id, string emri, string mbiemri, string email, string nrTel, int angazhimi) : base(id, emri, mbiemri, email, nrTel, angazhimi)
         {
-            this.Pervoja = Pervoja;
-            
         }
+
+
     }
 }
