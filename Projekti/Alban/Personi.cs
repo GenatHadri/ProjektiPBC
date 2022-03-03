@@ -6,11 +6,48 @@ using System.Threading.Tasks;
 
 namespace Projekti
 {
-    public class Personi
+    public abstract class Personi
     {
-        protected string Emri;
-        protected string Mbiemri;
-        public string _Emri { get { return Emri; } set { Emri = value; } }
-        public string _Mbiemri { get { return Mbiemri; } set { Mbiemri = value; } }
+        private string Emri { get; set; }
+        private string Mbiemri { get; set; }
+        private string Email { get; set; }
+
+        protected Personi(string emri, string mbiemri, string email)
+        {
+            if(emri == null || emri.Trim() == "")
+            {
+                throw new ProjektiException("Emri eshte null!");
+            }
+            if(mbiemri == null || mbiemri.Trim() == "")
+            {
+                throw new ProjektiException("Email eshte null!");
+            }
+            if(email == null || email.Trim() == "")
+            {
+                throw new ProjektiException("Email eshte null!");
+            }
+            Emri = emri;
+            Mbiemri = mbiemri;
+            Email = email;
+        }
+
+        public string toString()
+        {
+            return Emri + " " + Mbiemri + " - " + Email;
+        }
+
+        public bool krahasimi(Object obj)
+        {
+            if(obj != null)
+            {
+                if(obj is Personi)
+                {
+                    Personi p = (Personi)obj;
+                    return p.Emri == this.Emri && p.Mbiemri == this.Mbiemri;
+                }
+            }
+            return false;
+        }
+
     }
 }
