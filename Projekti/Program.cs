@@ -9,7 +9,8 @@ namespace Projekti
     internal class Program
     {
         static void Main(string[] args)
-        {
+        { Departamenti d = new Departamenti(122, "")
         }
+
     }
 }

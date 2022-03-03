@@ -29,3 +29,4 @@ C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\bin\Debug\Projekti.exe
 C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\bin\Debug\Projekti.pdb
 C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\obj\Debug\Projekti.exe
 C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\obj\Debug\Projekti.pdb
+C:\Users\HP\Desktop\Valmire-Projekti\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.AssemblyReference.cache
