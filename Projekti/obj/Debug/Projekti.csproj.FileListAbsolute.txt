@@ -14,3 +14,11 @@ C:\Users\HP\Source\Repos\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.Suggeste
 C:\Users\HP\Source\Repos\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.CoreCompileInputs.cache
 C:\Users\HP\Source\Repos\ProjektiPBC\Projekti\obj\Debug\Projekti.exe
 C:\Users\HP\Source\Repos\ProjektiPBC\Projekti\obj\Debug\Projekti.pdb
+C:\Users\PBCA\source\repos\GenatHadri\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.AssemblyReference.cache
+C:\Users\PBCA\source\repos\GenatHadri\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.SuggestedBindingRedirects.cache
+C:\Users\PBCA\source\repos\GenatHadri\ProjektiPBC\Projekti\obj\Debug\Projekti.csproj.CoreCompileInputs.cache
+C:\Users\PBCA\source\repos\GenatHadri\ProjektiPBC\Projekti\obj\Debug\Projekti.exe
+C:\Users\PBCA\source\repos\GenatHadri\ProjektiPBC\Projekti\obj\Debug\Projekti.pdb
+C:\Users\PBCA\source\repos\GenatHadri\ProjektiPBC\Projekti\bin\Debug\Projekti.exe.config
+C:\Users\PBCA\source\repos\GenatHadri\ProjektiPBC\Projekti\bin\Debug\Projekti.exe
+C:\Users\PBCA\source\repos\GenatHadri\ProjektiPBC\Projekti\bin\Debug\Projekti.pdb

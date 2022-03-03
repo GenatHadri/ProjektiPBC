@@ -8,9 +8,9 @@ namespace Projekti
 {
     public abstract class Personi
     {
-        private string Emri { get; set; }
-        private string Mbiemri { get; set; }
-        private string Email { get; set; }
+        public string Emri { get; set; }
+        protected string Mbiemri { get; set; }
+        protected string Email { get; set; }
 
         protected Personi(string emri, string mbiemri, string email)
         {

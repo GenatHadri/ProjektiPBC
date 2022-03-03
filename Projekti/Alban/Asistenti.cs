@@ -12,10 +12,14 @@ namespace Projekti
 
         public int _Pervoja { get { return Pervoja; } set{ Pervoja = value; } }
 
-        public Asistenti(int Pervoja, string Emri, string Mbiemri, string Email, int ID, int Angazhimi, string NrTel) : base(Emri, Mbiemri, ID, Email, NrTel)
+        public Asistenti(int Pervoja, string Emri, string Mbiemri, string Email, int ID, int Angazhimi, string NrTel) : base(ID, Emri, Mbiemri,  Email, NrTel,Angazhimi)
         {
             this.Pervoja = Pervoja;
             
+        }
+        public override string ToString()
+        {
+            return $"{ this.Emri} { this.Mbiemri} Email:{this.Email}";
         }
     }
 }

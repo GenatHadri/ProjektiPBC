@@ -58,7 +58,6 @@
     <Compile Include="ProjektiException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stafi.cs" />
-    <Compile Include="Tema.cs" />
     <Compile Include="Universiteti.cs" />
   </ItemGroup>
   <ItemGroup>
