@@ -49,13 +49,16 @@
     <Compile Include="Alban\StafiAkademik.cs" />
     <Compile Include="Departamenti.cs" />
     <Compile Include="EditFiles.cs" />
+    <Compile Include="Fidan\Tema.cs" />
+    <Compile Include="Fidan\Vlersimi.cs" />
     <Compile Include="Genat\Lenda.cs" />
+    <Compile Include="Genat\Studenti.cs" />
     <Compile Include="Komisioni.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjektiException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Genat\Studenti.cs" />
     <Compile Include="Stafi.cs" />
+    <Compile Include="Tema.cs" />
     <Compile Include="Universiteti.cs" />
   </ItemGroup>
   <ItemGroup>
