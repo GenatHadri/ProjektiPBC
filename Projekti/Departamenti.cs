@@ -23,8 +23,6 @@ namespace Projekti
 
         Stafi  Stafi { get; set; }
         public string Drejtimi { get; set; }
-        
-
 
     }
 }
