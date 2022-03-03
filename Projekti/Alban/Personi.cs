@@ -16,24 +16,24 @@ namespace Projekti
         {
             if(emri == null || emri.Trim() == "")
             {
-                throw new ProjektiException("Emri eshte null!");
+                throw new ProjektiException("Emri nuk lejohet te jete i zbrazet!");
             }
             if(mbiemri == null || mbiemri.Trim() == "")
             {
-                throw new ProjektiException("Email eshte null!");
+                throw new ProjektiException("Mbiemri nuk lejohet te jete i zbrazet!");
             }
             if(email == null || email.Trim() == "")
             {
-                throw new ProjektiException("Email eshte null!");
+                throw new ProjektiException("Email nuk lejohet te jete i zbrazet!");
             }
             Emri = emri;
             Mbiemri = mbiemri;
             Email = email;
         }
 
-        public string toString()
+        public override string ToString()
         {
-            return Emri + " " + Mbiemri + " - " + Email;
+            return this.Emri + " " + this.Mbiemri + " -- " + this.Email;
         }
 
         public bool krahasimi(Object obj)
