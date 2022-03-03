@@ -23,7 +23,7 @@ namespace Projekti
             this.Grada = Grada;
 
         }
-        public  string ToString()
+        public string ToString()
         {
             return $"{ this.Grada}.{ this.Emri} { this.Mbiemri} Email:{this.Email}";
         }

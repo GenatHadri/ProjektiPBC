@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Projekti
 {
-    public class Asistenti:StafiAkademik
+    public class Asistenti : StafiAkademik
     {
         private int Pervoja;
 
-        public int _Pervoja { get { return Pervoja; } set{ Pervoja = value; } }
+        public int _Pervoja { get { return Pervoja; } set { Pervoja = value; } }
 
         public Asistenti(int Pervoja, string Emri, string Mbiemri, string Email, int ID, int Angazhimi, string NrTel) : base(Emri, Mbiemri, ID, Email, NrTel)
         {
             this.Pervoja = Pervoja;
-            
+
         }
     }
 }
