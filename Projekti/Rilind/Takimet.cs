@@ -12,6 +12,7 @@ namespace Projekti
         Profesori profesori { get; set; }
         DateTime data { get; set; }
 
+
         public Takimet(Studenti studenti, Profesori profesori, DateTime data)
         {
             this.studenti = studenti;
