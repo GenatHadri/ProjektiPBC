@@ -15,7 +15,7 @@ namespace Projekti
 
         public Departamenti(string emri, string email)
         {
-            Emri=emri;
+            EmriDepartamentit=emri;
             Email=email;
         }
 
