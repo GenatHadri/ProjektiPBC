@@ -1,0 +1,6 @@
+*.suo
+*.cache
+bin/
+obj/
+packages
+*.dll

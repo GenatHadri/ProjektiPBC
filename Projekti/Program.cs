@@ -10,6 +10,7 @@ namespace Projekti
     {
         static void Main(string[] args)
         {
+<<<<<<< HEAD
             Departamenti d1 = new Departamenti(152800, "Biologji", "biologji@uni-pr.edu", "Arsimor");
             Departamenti d2 = new Departamenti(152801, "Matematike", "matematike@uni-pr.edu", "Shkencat Kompjuterike ");
             Departamenti d3 = new Departamenti(152802, "Matematike", "matematike@uni-pr.edu", "Matematik financiare");
@@ -28,6 +29,8 @@ namespace Projekti
             Console.WriteLine(l2);
             Console.WriteLine(s1);
              
+=======
+>>>>>>> b0511363c83aa4717543c4a13b4b3a74268a0614
         }
     }
 }
