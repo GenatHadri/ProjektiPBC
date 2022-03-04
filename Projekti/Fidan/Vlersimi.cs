@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekti.Rilind;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,29 +9,25 @@ namespace Projekti.Fidan
 {
     internal class Vlersimi
     {
-       private int Nota { get; set; }
-        public Tema t {get; set; }
-
-        public Studenti Studenti;
-        public Vlersimi(Studenti studenti, Tema t , int Nota)
+        private int Nota;
+        private Tema tema;
+        private Komisioni komisioni;
+        private Kerkesa kerkesa;
+        public Vlersimi(Komisioni komisioni, Kerkesa kerkesa, int nota)
         {
-
-            if (studenti == null)
-            {
-                throw new ProjektiException("studenti eshte null");
-
-            }
-            if (t == null)
-            {
-                throw new ProjektiException("tema eshte null");
-            }
-            if (Nota < 5 || Nota > 10)
+            if (Nota1 < 5 || Nota1 > 10)
             {
                 throw new ProjektiException("nota eshte shenuar gabim");
             }
-            Studenti = studenti;
-            this.t = t;
-            this.Nota = Nota;
+            this.tema = tema;
+            this.Nota1 = Nota1;
         }
+       
+        public int Nota1 { get => Nota; set => Nota = value; }
+        internal Tema Tema { get => tema; set => tema = value; }
+        internal Komisioni Komisioni { get => komisioni; set => komisioni = value; }
+        internal Kerkesa Kerkesa { get => kerkesa; set => kerkesa = value; }
+
+
     }
 }

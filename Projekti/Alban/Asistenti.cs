@@ -8,26 +8,25 @@ namespace Projekti
 {
     public class Asistenti : StafiAkademik
     {
-        private int Pervoja;
+        private string LlojiUshtrimeve { get; set; }
 
-        public int _Pervoja { get { return Pervoja; } set { Pervoja = value; } }
-
-        public Asistenti(int id, string emri, string mbiemri, string email, string nrTel, int angazhimi, int pervoja) : base(id, emri, mbiemri, email, nrTel, angazhimi)
+        public Asistenti(int id, string emri, string mbiemri, string email, string nrTel, int angazhimi, string llojiUshtrimeve) : base(id, emri, mbiemri, email, nrTel)
         {
-
-            
-
-
-            if (pervoja < 0)
+            if (llojiUshtrimeve == null || llojiUshtrimeve.Trim() == "")
             {
-                throw new ProjektiException("Pervoja e asistentit nuk lejohet te jete me e vogel se 0!");
+                throw new ProjektiException("Angazhimi i asistentit eshte null!");
             }
-            this.Pervoja = pervoja;
+            this.LlojiUshtrimeve = llojiUshtrimeve;
+        }
+
+        public override int Angazhimi()
+        {
+            return 20;
         }
 
         public override string ToString()
         {
-            return $"{base.ToString()} ka pervoje {this.Pervoja} vjeqare";
+            return "Asistenti " + base.ToString() + " me llojin e ushtrimeve " + LlojiUshtrimeve;
 
         }
     }

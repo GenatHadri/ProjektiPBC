@@ -12,34 +12,40 @@ namespace Projekti
         public int Ects { get; set; }
         private bool Obligative { get; set; }
 
-        public Lenda(string emri, int ects, string obligative)
+        public Lenda(string emri, int ects, bool obligative)
         {
-            if(Emri == null || Emri.Trim() == "")
+            if (emri == null)
             {
                 throw new ProjektiException("Emri i lendes eshte null!");
             }
-            if(ects < 0 || ects > 6)
+            if (ects < 0 || ects > 6)
             {
                 throw new ProjektiException("Formati i ect-se se lendes eshte gabim!");
             }
-            if(obligative == null)
+            if (obligative == null)
             {
                 throw new ProjektiException("Caktoni nese lenda eshte obligative!");
             }
-            Emri = emri;
-            Ects = ects;
+            this.Obligative = obligative;
+            this.Emri = emri;
+            this.Ects = ects;
         }
 
-        public override string ToString()
+        //public override string ToString()
+        //{
+        //    return Emri + " - " + Ects;
+        //}
+
+        public string toString()
         {
-            return Emri + " - " + Ects;
+            return this.Emri + ";" + this.Ects;
         }
 
         public override bool Equals(object obj)
         {
-            if(obj != null)
+            if (obj != null)
             {
-                if(obj is Lenda)
+                if (obj is Lenda)
                 {
                     Lenda l = (Lenda)obj;
                     return l.Emri == this.Emri && l.Ects == this.Ects;

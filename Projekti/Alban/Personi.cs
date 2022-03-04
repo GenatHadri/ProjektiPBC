@@ -8,34 +8,39 @@ namespace Projekti
 {
     public abstract class Personi
     {
+        public int Id { get; set; }
         public string Emri { get; set; }
         protected string Mbiemri { get; set; }
         protected string Email { get; set; }
 
-        protected Personi(string emri, string mbiemri, string email)
+        protected Personi(int id, string emri, string mbiemri, string email)
         {
-            if(emri == null || emri.Trim() == "")
+            if (id < 0)
+            {
+                throw new ProjektiException("Formati i ID-se eshte gabim!");
+            }
+            if (emri == null || emri.Trim() == "")
             {
                 throw new ProjektiException("Emri nuk lejohet te jete i zbrazet!");
             }
-            if(mbiemri == null || mbiemri.Trim() == "")
+            if (mbiemri == null || mbiemri.Trim() == "")
             {
                 throw new ProjektiException("Mbiemri nuk lejohet te jete i zbrazet!");
             }
-            if(email == null || email.Trim() == "")
+            if (email == null || email.Trim() == "")
             {
                 throw new ProjektiException("Email nuk lejohet te jete i zbrazet!");
             }
-            Emri = emri;
-            Mbiemri = mbiemri;
-            Email = email;
+            this.Id = id;
+            this.Emri = emri;
+            this.Mbiemri = mbiemri;
+            this.Email = email;
         }
 
         public override string ToString()
         {
-            return $"{this.Emri} {this.Mbiemri} me email {this.Email}";
+            return Id + " : " + Emri + " " + Mbiemri + " - " + Email;
         }
-
 
         public override bool Equals(Object obj)
         {
@@ -44,14 +49,11 @@ namespace Projekti
                 if (obj is Personi)
                 {
                     Personi p = (Personi)obj;
-                    return p.Emri == this.Emri && p.Mbiemri == this.Mbiemri;
+                    return p.Id == Id;
                 }
             }
             return false;
         }
-
-
-
 
     }
 }

@@ -9,27 +9,27 @@ namespace Projekti
 {
     public class Profesori : StafiAkademik
     {
-        private string Grada;
+        private string GradaAkademike { get; set; }
 
-        public Profesori(int id, string emri, string mbiemri, string email, string nrTel, int angazhimi, string grada) : base(id, emri, mbiemri, email, nrTel, angazhimi)
+        public Profesori(int id, string emri, string mbiemri, string email, string nrTel, string grada) : base(id, emri, mbiemri, email, nrTel)
         {
             if (grada == null || grada.Trim() == "")
             {
                 throw new ProjektiException("Grada e profesorit eshte e zbrazet!");
             }
-            this.Grada = grada;
+            this.GradaAkademike = grada;
         }
 
 
-
-
-        public string _Grada { get { return Grada; } set { Grada = value; } }
-
+        public override int Angazhimi()
+        {
+            throw new NotImplementedException();
+        }
 
         public override string ToString()
 
         {
-            return $"{base.ToString()} ka graden {this.Grada}";
+            return "Profesori " + base.ToString() + " me grade akademike " + GradaAkademike;
         }
     }
 }

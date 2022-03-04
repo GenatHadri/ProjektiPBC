@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekti.Rilind;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,22 +9,22 @@ namespace Projekti
 {
     internal class Tema
     {
-        private string Emri { get; set; }
-        private int TemaEcts { get; set; }
-        Profesori Profesori { get; set; }
-        Studenti Studenti { get; set; }
+        private string Emri;
+        private int TemaEcts;
 
-        public Tema(Profesori p, Studenti s, string Emri)
+        public Tema(string Emri)
         {
             if (Emri == null || Emri.Trim() == "")
             {
                 throw new ProjektiException("Emri i temes eshte null!");
             }
-            this.Profesori = p;
-            this.Studenti = s;
-            this.Emri = Emri;
-            TemaEcts = 12;
+            this.Emri1 = Emri;
+            TemaEcts1 = 12;
         }
+
+        public string Emri1 { get => Emri; set => Emri = value; }
+        public int TemaEcts1 { get => TemaEcts; set => TemaEcts = value; }
+
 
         //Lenda eshte perdor per ti caktuar ects per validimin nese ka mundesi me paraqite temen
 

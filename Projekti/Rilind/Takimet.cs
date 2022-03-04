@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekti.Rilind;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,18 +9,25 @@ namespace Projekti
 {
     internal class Takimet
     {
-        Studenti studenti { get; set; }
-        Profesori profesori { get; set; }
-        DateTime data { get; set; }
+        private Kerkesa kerkesa;
+        private int nrTakimeve;
 
-
-        public Takimet(Studenti studenti, Profesori profesori, DateTime data)
+        public Takimet(Kerkesa kerkesa, int nrTakimit)
         {
-            this.studenti = studenti;
-            this.profesori = profesori;
-            this.data = data;
+            if (nrTakimeve < 0 || nrTakimeve > 12)
+            {
+                throw new ProjektiException("Duhet te mbahen 12 takime per te bere vleresimin e temes!");
+            }
+            this.Kerkesa = kerkesa;
+            this.nrTakimeve = nrTakimit;
         }
 
+        public int NrTakimeve { get => nrTakimeve; set => nrTakimeve = value; }
+        internal Kerkesa Kerkesa { get => kerkesa; set => kerkesa = value; }
 
+        public override string ToString()
+        {
+            return "Profesori " + this.kerkesa.Profesori.Emri + $" ka mbajtur {nrTakimeve} me studentin {this.kerkesa.Studenti.Emri}";
+        }
     }
 }

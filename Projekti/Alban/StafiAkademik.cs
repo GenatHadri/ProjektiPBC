@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace Projekti
 {
-    public class StafiAkademik:Personi
+    public abstract class StafiAkademik:Personi
     {
-        private int Id { get; set; }
         private string NrTel { get; set; }
-        private int Angazhimi { get; set; }
 
-        public StafiAkademik(int id, string emri, string mbiemri, string email, string nrTel, int angazhimi) : base(emri, mbiemri, email)
+        public StafiAkademik(int id, string emri, string mbiemri, string email, string nrTel) : base(id, emri, mbiemri, email)
         {
             if(id < 0)
             {
@@ -24,12 +22,13 @@ namespace Projekti
             }
             this.Id = id;
             this.NrTel = nrTel;
-            this.Angazhimi = angazhimi;
         }
+
+        public abstract int Angazhimi();
 
         public override string ToString()
         {
-            return $"Id: {this.Id} - {base.ToString()} ka angazhimin {this.Angazhimi}";
+            return Id + base.ToString() + " me numer te telefonit: " + NrTel + " ka angazhimin " + Angazhimi() + "ore ";
         }
 
     }

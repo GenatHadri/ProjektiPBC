@@ -44,17 +44,6 @@ namespace Projekti
             return obj is Universiteti universiteti && EmriUniversitetit == universiteti.EmriUniversitetit;
         }
 
-        public List<Departamenti> departamentet = new List<Departamenti>()
-        {
-            new Departamenti (1234, "Matematike", "math@uni-pr.edu","Shkenncat Kompjuterike "),
-            new Departamenti (1235, "Matematike", "math@uni-pr.edu","Matematik e Pergjithshme "),
-            new Departamenti (1236, "Matematike", "math@uni-pr.edu","Matematike Financiare "),
-            new Departamenti (1238, "Kimi", "kimi@uni-pr.edu","Kimi arsimore  "),
-            new Departamenti (1238, "Kimi", "kimi@uni-pr.edu","Kimi e pergjithshme "),
-
-        };
-
-
         public int Fillo()
         {
 
@@ -66,6 +55,7 @@ namespace Projekti
 
             return pergjigjia;
         }
+
         private void ListaDepartamenteve()
         {
             Console.WriteLine("\nDepartamentet ne universitetin tone jane:");
@@ -75,7 +65,6 @@ namespace Projekti
             }
 
             Console.Clear();
-
         }
 
 

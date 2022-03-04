@@ -15,7 +15,6 @@ namespace Projekti
         Profesori Profesoi { get; set; }
 
         List<Profesori> Profesoret = new List<Profesori>();
-        Stafi Stafi { get; set; }
         public string Drejtimi { get; set; }
 
         public Departamenti(int id, string emriDepartamentit, string email, string drejtimi, Profesori profesori)
