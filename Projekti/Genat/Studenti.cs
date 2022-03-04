@@ -13,7 +13,6 @@ namespace Projekti
         public string Mbiemri { get; set; }
         public string Email { get; set; }
         public string Drejtimi { get; set; }
-        private bool MundTeParaqesTemenEDiplomes { get; set; }
         public bool KaKryerPagesat { get; set; }
         public Lenda[] lendet;
 
@@ -26,21 +25,21 @@ namespace Projekti
             Drejtimi = drejtimi;
             KaKryerPagesat = kaKryerPagesat;
             this.lendet = lendet;
-            this.MundTeParaqesTemenEDiplomes = false;
         }
 
-        public void MundTeParaqesTemen()
+        public bool MundTeParaqesTemen()
         {
             int totalEcts = 0;
             for (int i = 0; i < lendet.Length; i++)
             {
-                totalEcts += lendet[i].ECTS;
+                totalEcts += lendet[i].Ects;
                     
             }
             if(totalEcts > 50)
             {
-                this.MundTeParaqesTemenEDiplomes = true;
+                return true;
             }
+            return false;
         }
 
         public override string ToString()
