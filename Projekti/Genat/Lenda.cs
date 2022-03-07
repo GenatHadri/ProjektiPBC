@@ -31,14 +31,14 @@ namespace Projekti
             this.Ects = ects;
         }
 
-        //public override string ToString()
-        //{
-        //    return Emri + " - " + Ects;
-        //}
+        public override string ToString()
+        {
+            return Emri + " - " + Ects + " : " + this.Obligative;
+        }
 
         public string toString()
         {
-            return this.Emri + ";" + this.Ects;
+            return this.Emri + ";" + this.Ects + ";" + (this.Obligative ? "Obligative" : "Jo Obligative");
         }
 
         public override bool Equals(object obj)

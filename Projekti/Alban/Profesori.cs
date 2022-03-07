@@ -23,13 +23,17 @@ namespace Projekti
 
         public override int Angazhimi()
         {
-            throw new NotImplementedException();
+            return 24;
         }
 
         public override string ToString()
-
         {
-            return "Profesori " + base.ToString() + " me grade akademike " + GradaAkademike;
+            return base.ToString() + ", me grade akademike " + GradaAkademike + " ka angazhim " + Angazhimi() + " ore!";
+        }
+
+        public string toString()
+        {
+            return this.Id1 + ";" + this.Emri1 + ";" + this.Mbiemri1 + ";" + this.Email1 + ";" + this.NrTel1 + ";" + this.GradaAkademike;
         }
     }
 }

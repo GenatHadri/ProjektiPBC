@@ -8,10 +8,10 @@ namespace Projekti
 {
     public abstract class Personi
     {
-        public int Id { get; set; }
-        public string Emri { get; set; }
-        protected string Mbiemri { get; set; }
-        protected string Email { get; set; }
+        private int Id;
+        private string Emri;
+        private string Mbiemri;
+        private string Email;
 
         protected Personi(int id, string emri, string mbiemri, string email)
         {
@@ -31,15 +31,20 @@ namespace Projekti
             {
                 throw new ProjektiException("Email nuk lejohet te jete i zbrazet!");
             }
-            this.Id = id;
-            this.Emri = emri;
-            this.Mbiemri = mbiemri;
-            this.Email = email;
+            this.Id1 = id;
+            this.Emri1 = emri;
+            this.Mbiemri1 = mbiemri;
+            this.Email1 = email;
         }
+
+        public int Id1 { get => Id; set => Id = value; }
+        public string Emri1 { get => Emri; set => Emri = value; }
+        public string Mbiemri1 { get => Mbiemri; set => Mbiemri = value; }
+        public string Email1 { get => Email; set => Email = value; }
 
         public override string ToString()
         {
-            return Id + " : " + Emri + " " + Mbiemri + " - " + Email;
+            return this.Id + " : " + this.Emri + " " + this.Mbiemri + " - " + this.Email;
         }
 
         public override bool Equals(Object obj)
@@ -49,7 +54,7 @@ namespace Projekti
                 if (obj is Personi)
                 {
                     Personi p = (Personi)obj;
-                    return p.Id == Id;
+                    return p.Id1 == Id1;
                 }
             }
             return false;

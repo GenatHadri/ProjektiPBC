@@ -25,8 +25,14 @@ namespace Projekti
         public string Emri1 { get => Emri; set => Emri = value; }
         public int TemaEcts1 { get => TemaEcts; set => TemaEcts = value; }
 
+        public override string ToString()
+        {
+            return "Tema: " + this.Emri + " ka " + this.TemaEcts1 + " Ects";
+        }
 
-        //Lenda eshte perdor per ti caktuar ects per validimin nese ka mundesi me paraqite temen
-
+        public string toString()
+        {
+            return this.Emri + ";" + this.TemaEcts1;
+        }
     }
 }

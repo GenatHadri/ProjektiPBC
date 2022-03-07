@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekti.Rilind;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,13 +16,57 @@ namespace Projekti
             try
             {
                 editFiles = new EditFiles();
-                Console.WriteLine("aa");
-                editFiles.Sw = new StreamWriter(@"C:\Users\PC\Desktop\editFiles\Lenda.txt");
-                Console.WriteLine("bb");
-                editFiles.Container();
-                Console.WriteLine("cc");
-                editFiles.ShkruajLendet();
 
+                //Lende
+                editFiles.LexoLendet();
+                //editFiles.ShkruajLendet();
+
+                //Student
+                editFiles.LexoStudentet();
+                //editFiles.ShkruajStudentet();
+
+                //Profesor
+                editFiles.LexoProfesoret();
+                //editFiles.ShkruajProfesoret();
+
+                //Tema
+                editFiles.LexoTemat();
+                //editFiles.ShkruajTemat();
+
+                //kerkesa
+                editFiles.LexoKerkesat();
+                //editFiles.ShkruajKerkesat();
+
+                //komision
+                editFiles.LexoKomisionet();
+                //editFiles.ShkruajKomisionet();
+
+                //Shqyretim
+                //editFiles.Container();
+                editFiles.LexoShqyretimet();
+                //editFiles.ShkruajShqyretimet();
+
+                //Takimet
+                editFiles.LexoTakimet();
+                //editFiles.ShkruajTakimet();
+
+                //Vleresimi
+                editFiles.LexoVleresimet();
+                //editFiles.ShkruajVleresimet();
+
+                //Queries
+                //editFiles.printLendet();
+                //editFiles.printStudentet();
+                //editFiles.printProfesoret();
+                //editFiles.printTema();
+                //editFiles.printKerkesat();
+                //editFiles.printKomisionet();
+                //editFiles.printShqyretimet();
+                //editFiles.printTakimet();
+                //editFiles.printVleresimet();
+                //editFiles.printStudentetMeNotenKaluese();
+                //editFiles.printKerkesatEAnuluara();
+                //editFiles.printKerkesatEPranuara();
             }
             catch (Exception ex)
             {
@@ -29,17 +74,9 @@ namespace Projekti
             }
             finally
             {
-                try
+                if (editFiles != null)
                 {
                     editFiles.CloseAll();
-                }
-                catch 
-                {
-                
-                }
-                finally
-                {
-                    Console.WriteLine("Files are closed");
                 }
             }
 

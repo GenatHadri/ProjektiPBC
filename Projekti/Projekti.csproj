@@ -50,10 +50,9 @@
     <Compile Include="Genat\Lenda.cs" />
     <Compile Include="Rilind\Kerkesa.cs" />
     <Compile Include="Rilind\Shqyretimi.cs" />
-    <Compile Include="Rilind\Vleresimi.cs" />
+    <Compile Include="Fidan\Vleresimi.cs" />
     <Compile Include="Valmire\Departamenti.cs" />
     <Compile Include="Fidan\Tema.cs" />
-    <Compile Include="Fidan\Vlersimi.cs" />
     <Compile Include="Genat\Studenti.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

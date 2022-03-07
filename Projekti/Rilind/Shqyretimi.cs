@@ -14,17 +14,22 @@ namespace Projekti.Rilind
 
         public Shqyretimi(Komisioni komisioni, Kerkesa kerkesa, bool vendimi)
         {
-            if(vendimi == null)
+            if (kerkesa == null)
             {
-                throw new ProjektiException("Vendimi eshte null!");
+                throw new ProjektiException("Kerkesa eshte null!");
             }
-            this.Komisioni = komisioni;
-            this.Kerkesa = kerkesa;
+            if (komisioni == null)
+            {
+                throw new ProjektiException("Komisioni eshte null!");
+            }
+            this.komisioni = komisioni;
+            this.kerkesa = kerkesa;
+            this.Vendimi = vendimi;
         }
 
         public void AnuloKerkesen(Kerkesa kerkesa)
         {
-            if(Vendimi == false)
+            if (Vendimi == false)
             {
                 kerkesa = this.kerkesa;
                 kerkesa.Tema = null;
@@ -37,7 +42,17 @@ namespace Projekti.Rilind
 
         public override string ToString()
         {
-            return "Komisioni me anetaret " + this.komisioni.P1.Emri + ", " + this.komisioni.P2.Emri + ", " + this.komisioni.P3.Emri;
+            return "Komisioni me anetaret: " + this.komisioni.P1.Emri1 + " " + this.komisioni.P1.Mbiemri1 + ", "
+                + this.komisioni.P2.Emri1 + " " + this.komisioni.P2.Mbiemri1 + ", "
+                + this.komisioni.P3.Emri1 + " " + this.komisioni.P3.Mbiemri1 
+                + $" ka vendosur qe te {(this.Vendimi?"pranoj":"anuloj")} kerkesen per zgjedhjen e temes se diplomes nga "
+                    + this.kerkesa.Studenti.Emri1 + " " + this.kerkesa.Studenti.Mbiemri1 + "!";
         }
+
+        public string toString()
+        {
+            return this.komisioni.Id1 + ";" + this.kerkesa.Id1 + ";" + (this.Vendimi ? "Pranohet" : "Anulohet");
+        }
+
     }
 }

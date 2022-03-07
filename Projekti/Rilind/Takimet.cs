@@ -12,22 +12,38 @@ namespace Projekti
         private Kerkesa kerkesa;
         private int nrTakimeve;
 
-        public Takimet(Kerkesa kerkesa, int nrTakimit)
+        public Takimet(Kerkesa kerkesa, int nrTakimeve, List<Shqyretimi> shqyretimet)
         {
-            if (nrTakimeve < 0 || nrTakimeve > 12)
+            for (int i = 0; i < shqyretimet.Count; i++)
             {
-                throw new ProjektiException("Duhet te mbahen 12 takime per te bere vleresimin e temes!");
+                if (kerkesa == shqyretimet[i].Kerkesa && shqyretimet[i].Vendimi1 == false)
+                {
+                    throw new ProjektiException($"Takimet me studentin {kerkesa.Studenti.Emri1} {kerkesa.Studenti.Mbiemri1} nuk mund te zhvillohen per arsye se i " +
+                        "eshte anuluar kerkesa nga komisioni!");
+                }
+            }
+            if(nrTakimeve < 0 || nrTakimeve > 12)
+            {
+                throw new ProjektiException("Format i gabuar i numrit te takimeve!");
             }
             this.Kerkesa = kerkesa;
-            this.nrTakimeve = nrTakimit;
+            this.NrTakimeve = nrTakimeve;
         }
 
         public int NrTakimeve { get => nrTakimeve; set => nrTakimeve = value; }
         internal Kerkesa Kerkesa { get => kerkesa; set => kerkesa = value; }
 
+
+
         public override string ToString()
         {
-            return "Profesori " + this.kerkesa.Profesori.Emri + $" ka mbajtur {nrTakimeve} me studentin {this.kerkesa.Studenti.Emri}";
+            return "Profesori " + this.Kerkesa.Profesori.Emri1 + $" ka mbajtur {NrTakimeve} me studentin {this.Kerkesa.Studenti.Emri1}";
+        }
+
+        public string toString()
+        {
+            //public Takimet(Kerkesa kerkesa, int nrTakimit, List<Shqyretimi> shqyretimet)
+            return this.Kerkesa.Id1 + ";" + this.nrTakimeve;
         }
     }
 }
