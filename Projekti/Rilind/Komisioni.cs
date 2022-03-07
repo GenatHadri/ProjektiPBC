@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Projekti
@@ -18,7 +19,10 @@ namespace Projekti
         public Komisioni(int Id, List<Profesori> profesorat)
         {
         Function:
+            rnd = new Random();
+
             this.profesorat = profesorat;
+            Thread.Sleep(10);
             p1 = profesorat[rnd.Next(0, profesorat.Count)];
             p2 = profesorat[rnd.Next(0, profesorat.Count)];
             p3 = profesorat[rnd.Next(0, profesorat.Count)];

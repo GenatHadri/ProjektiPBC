@@ -42,9 +42,8 @@ namespace Projekti
                 //editFiles.ShkruajKomisionet();
 
                 //Shqyretim
-                //editFiles.Container();
                 editFiles.LexoShqyretimet();
-                //editFiles.ShkruajShqyretimet();
+                editFiles.ShkruajShqyretimet();
 
                 //Takimet
                 editFiles.LexoTakimet();
